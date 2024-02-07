@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 @Component
 @Configuration
+
 public class ScannerInputService implements UserInputService{
 
 
