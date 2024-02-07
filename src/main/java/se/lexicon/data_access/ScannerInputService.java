@@ -15,10 +15,10 @@ public class ScannerInputService implements UserInputService{
     private Scanner scanner;
 
 
-    @Bean
-    public Scanner scanner(){
-        return scanner;
-    }
+//    @Bean
+//    public Scanner scanner(){
+//        return scanner;
+//    }
 
     @Autowired
     public ScannerInputService(Scanner scanner) {
