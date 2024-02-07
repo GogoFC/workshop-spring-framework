@@ -1,4 +1,4 @@
-package se.lexicon.data_access;
+package se.lexicon.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

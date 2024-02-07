@@ -1,10 +1,10 @@
 package se.lexicon;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import se.lexicon.data_access.ComponentScanConfig;
-import se.lexicon.data_access.ScannerInputService;
+import se.lexicon.config.ComponentScanConfig;
+import se.lexicon.util.ScannerInputService;
 import se.lexicon.data_access.StudentDao;
-import se.lexicon.data_access.UserInputService;
+import se.lexicon.util.UserInputService;
 
 import java.util.Scanner;
 
