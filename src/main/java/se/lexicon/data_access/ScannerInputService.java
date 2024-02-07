@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 import java.util.Scanner;
 
 @Component
-@Configuration
 
 public class ScannerInputService implements UserInputService{
 
@@ -28,7 +27,8 @@ public class ScannerInputService implements UserInputService{
 
     @Override
     public String getString() {
-        return null;
+        System.out.println("Enter Text");
+        return scanner.nextLine();
     }
 
     @Override
