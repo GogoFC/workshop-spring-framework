@@ -2,6 +2,7 @@ package se.lexicon;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import se.lexicon.config.ComponentScanConfig;
+import se.lexicon.service.StudentManagementConsoleImpl;
 import se.lexicon.util.ScannerInputService;
 import se.lexicon.data_access.StudentDao;
 import se.lexicon.util.UserInputService;
@@ -18,9 +19,14 @@ public class Main {
 
 
 
-        UserInputService userInputService =context.getBean(UserInputService.class);
+        //UserInputService userInputService =context.getBean(UserInputService.class);
         //UserInputService userInputService = new ScannerInputService(new Scanner(System.in));
-        System.out.println(userInputService.getString());
+        //System.out.println(userInputService.getString());
+
+        StudentManagementConsoleImpl testStudent = context.getBean(StudentManagementConsoleImpl.class);
+        //System.out.println(testStudent.create());
+        testStudent.create();
+
 
     }
 
